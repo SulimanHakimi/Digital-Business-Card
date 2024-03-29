@@ -1,7 +1,7 @@
 import React from "react";
 function Footer() {
   return (
-    <div className="bg-[#161619] w-full flex justify-center items-center h-20">
+    <div className="bg-[#130f0f] w-full flex justify-center items-center h-20">
       <ul className="flex gap-4">
         <li className="cursor-pointer">
           <svg

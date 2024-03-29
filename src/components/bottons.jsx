@@ -2,7 +2,7 @@ import React from "react";
 
 function Botton() {
   return (
-    <div className="flex flex-col gap-3 mt-4">
+    <div className="flex flex-col gap-3">
       <div className="flex flex-col items-center justify-center mb-2">
         <h1 className="text-white text-2xl font-semibold">Suliman Hakimi</h1>
         <span className="text-[#ecccb4]">Frontend Developer</span>
