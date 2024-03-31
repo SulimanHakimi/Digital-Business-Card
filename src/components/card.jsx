@@ -4,6 +4,7 @@ import Main from "./main";
 import Footer from "./footer";
 import Img from "./img";
 import { IoMdAdd } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Card() {
   return (
@@ -12,9 +13,9 @@ function Card() {
       <Botton />
       <Main />
       <Footer />
-      <div className="bg-[#DCDCDC] cursor-pointer p-4 rounded-full fixed right-4 bottom-6 lg:right-[38%]">
+      <Link to={"/Create-Card"} className="bg-[#DCDCDC] cursor-pointer z-40 p-4 rounded-full fixed right-4 bottom-6 lg:right-[38%]">
         <IoMdAdd size={35} />
-      </div>
+      </Link>
     </div>
   );
 }
