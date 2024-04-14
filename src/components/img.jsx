@@ -2,9 +2,9 @@ import React from "react";
 
 function Img() {
   return (
-    <div>
+    <div className="w-4/5 flex justify-center">
       <img
-        src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=SulimanHakimi"
+        src="https://cdn.onlinewebfonts.com/svg/img_415639.png"
         className="h-40"
         alt=""
       />

@@ -2,7 +2,7 @@ import React from "react";
 
 function Main() {
   return (
-    <div className="lg:px-7 px-10 gap-5 flex justify-between py-2 flex-col">
+    <div className="lg:px-5 px-10 gap-5 flex justify-between py-4 flex-col">
       <div className="flex flex-col gap-2">
         <h1 className="font-semibold text-xl text-white">About</h1>
         <p className="text-[#DCDCDC] text-sm lg:text-base">

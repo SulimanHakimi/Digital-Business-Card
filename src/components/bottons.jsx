@@ -1,17 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Botton() {
   return (
     <div className="flex flex-col gap-3">
       <div className="flex flex-col items-center justify-center mb-2">
         <h1 className="text-white text-2xl font-semibold">Suliman Hakimi</h1>
-        <span className="text-[#ecccb4]">Frontend Developer</span>
-        <span className="text-[#F5F5F5] text-sm text-center">
-          suliman.net
-        </span>
+        <span className="text-[#ecbfb4]">Frontend Developer</span>
+        <span className="text-[#F5F5F5] text-base text-center">suliman.net</span>
       </div>
       <div className="flex gap-3">
-        <div className="cursor-pointer flex items-center bg-white text-[#1E1F26] font-medium px-9 py-2 rounded-md gap-2">
+        <Link to={"mailto:afgsuliman50@gmail.com"} className="flex items-center justify-center bg-white text-[#1E1F26] font-medium w-32 h-10 md:w-44 lg:w-36 lg:h-10 md:h-12 rounded-md gap-2">
           <svg
             width="16"
             height="16"
@@ -29,8 +28,8 @@ function Botton() {
             />
           </svg>
           Email
-        </div>
-        <div className="cursor-pointer flex items-center bg-[#5093E2] text-white font-medium px-9 py-2 rounded-md gap-2">
+        </Link>
+        <Link target="_blank" to={"https://www.linkedin.com/in/suliman-hakimi"} className="flex items-center justify-center bg-[#5093E2] text-white font-medium w-32 h-10 md:w-44 lg:w-36 lg:h-10 md:h-12 rounded-md gap-2">
           <svg
             width="16"
             height="16"
@@ -44,7 +43,7 @@ function Botton() {
             />
           </svg>
           LinkedIn
-        </div>
+        </Link>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function CreateCard() {
   const [inputData, setInputData] = useState();
@@ -9,7 +10,6 @@ export default function CreateCard() {
     }));
   };
   let data = [];
-  console.log(inputData);
   console.log(data);
 
   data.push(
@@ -23,12 +23,11 @@ export default function CreateCard() {
       Interests: inputData?.Interests,
     })
   );
-
   const localStorage = () => {
     window.localStorage.setItem("userCard", data);
   };
   return (
-    <div className="flex p-8 flex-col lg:w-1/4 w-full md:w-2/4 gap-4 bg-[#1A1B21]">
+    <div className="flex p-8 flex-col lg:w-1/4 w-full md:w-2/4 gap-4 rounded-2xl bg-[#1A1B21]">
       <div className="text-center font-semibold text-2xl text-white p-5">
         Create Digital Card
       </div>
@@ -112,12 +111,12 @@ export default function CreateCard() {
           className="focus:ring-transparent w-[110%] p-2 outline-none caret-blue-700 rounded-sm resize-none	"
         ></textarea>
       </div>
-      <a
+      <Link
         onClick={localStorage}
-        className="bg-[#130f0f] hover:bg-[#130f0f9d] cursor-pointer text-center text-white font-medium m-2 p-4 rounded"
+        className="bg-[#000000] hover:bg-[#0000003f] cursor-pointer text-center text-white font-medium m-2 p-4 rounded"
       >
         Create
-      </a>
+      </Link>
     </div>
   );
 }
